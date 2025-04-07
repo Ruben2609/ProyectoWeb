@@ -3,14 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería - Mi Sitio de Fotografía</title>
+    <title>Galería - AP Photography</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.html">Mi Sitio de Fotografía</a>
+    <header class="header">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index.html">AP</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -35,27 +36,24 @@
             </div>
         </nav>
     </header>
-    <main class="container mt-4">
-        <section id="gallery">
-            <h1>Galería de Fotos</h1>
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="https://via.placeholder.com/300" alt="Foto 1" class="img-fluid">
-                </div>
-                <div class="col-md-4">
-                    <img src="https://via.placeholder.com/300" alt="Foto 2" class="img-fluid">
-                </div>
-                <div class="col-md-4">
-                    <img src="https://via.placeholder.com/300" alt="Foto 3" class="img-fluid">
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="bg-dark text-white p-3 mt-4">
-        <div class="container">
-            <p>&copy; 2023 Mi Sitio de Fotografía</p>
+    <main class="main">
+        <div class="services text-center mt-4">Galería</div>
+        <h1 class="title text-center mt-4">Nuestras Fotos</h1>
+        <div class="gallery d-flex justify-content-center gap-3 mt-4">
+            <img alt="A bride in a white wedding dress with feather details sitting with four bridesmaids in orange/gold satin dresses in a modern interior with a round mirror in the background" class="gallery-img img-fluid" height="500" src="https://replicate.delivery/xezq/ZJLZiObpCT73IVCA9hSfH2VRyxQerOJb4jIoRcgvBwEc4SgUA/out-0.png" width="400"/>
+            <img alt="A couple embracing on a beach at sunset, one person kissing the other's cheek while they smile, holding a bouquet of tropical flowers with orange lilies" class="gallery-img img-fluid" height="500" src="https://replicate.delivery/xezq/bDjPQWZWJSa4Fl4YRlX8oikd7j7EFpjpp087gz2zeYwNcJQKA/out-0.png" width="400"/>
+            <img alt="A couple in a romantic pose, one person in a light green suit and the other wearing white with sunglasses, smiling and embracing in warm sunlight" class="gallery-img img-fluid" height="500" src="https://replicate.delivery/xezq/1ghtgVXiejWITaIqsjxF0d9UvI7RCvyffA8RNZmFVEP2wlApA/out-0.png" width="400"/>
         </div>
-    </footer>
+        <div class="navigation d-flex justify-content-between w-100 mt-4">
+            <div class="nav-arrow">←</div>
+            <div class="nav-arrow">→</div>
+        </div>
+        <div class="categories d-flex justify-content-center gap-3 mt-4">
+            <a class="category active" href="#">Weddings</a>
+            <a class="category" href="#">Lifestyle</a>
+            <a class="category" href="#">Corporate</a>
+        </div>
+    </main>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
